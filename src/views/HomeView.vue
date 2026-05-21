@@ -1,6 +1,8 @@
 <script setup>
+
+
 </script>
 
 <template>
-       HOME   
+    Tela Inicial
 </template>

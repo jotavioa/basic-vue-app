@@ -1,25 +1,25 @@
 <script setup>
-
-import { RouterLink, RouterView } from 'vue-router'
-import { useAuthStore } from '@/stores/auth';
-import Login from '@/views/LoginView.vue';
-
-const store = useAuthStore();
+import { RouterView } from 'vue-router';
+import MenuSuperior from "@/views/components/MenuSuperior.vue"
+import SideMenu from './views/components/SideMenu.vue';
 
 </script>
 
 <template>
 
+  <div class="min-h-screen bg-gray-200">
 
-    <Login v-if="!store.isAuthenticated"></Login>
 
-    <header v-else>
-        <nav>
-            <RouterLink to="/">Home</RouterLink>
-            <a href="#" @click="store.logout">Logout</a>
-        </nav>
-    </header>
-    <RouterView v-if="store.isAuthenticated" />
+    <MenuSuperior></MenuSuperior>
+    <SideMenu></SideMenu>
 
+    <div class="pt-2 px-2">
+      <RouterView />
+    </div>
+
+
+  </div>
 
 </template>
+
+<style scoped></style>
