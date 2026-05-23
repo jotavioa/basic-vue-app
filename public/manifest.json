@@ -1,0 +1,27 @@
+{
+  "name": "pwa-test-app",
+  "short_name": "PWA Test App",
+  "start_url": "/",
+  "display": "standalone",
+  "description": "A description for your application",
+  "lang": "pt-BR",
+  "dir": "auto",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/icons/img512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/img192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "prefer_related_applications": false
+}
